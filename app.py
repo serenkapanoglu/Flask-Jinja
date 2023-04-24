@@ -96,14 +96,14 @@ def tell_hikaye():
     plural = request.args.get("plural")
     story=f"Once upon a time in a long-ago {place}, there lived a large {adj} {noun}. It loved to {verb} {plural}."
     return render_template("hikaye.html", story=story)
-    
+
 
 @app.route('/form3')
 def show_form_3():
-    isim=request.args["isim"]
-    return render_template("form3.html", isim=isim)
+    return render_template("form3.html")
 
 @app.route('/page')
 def show_page():
-    return render_template("page.html")
+    isim=request.args["isim"]
+    return render_template("page.html", isim=isim)
     
