@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock %}
+{% block page_name %}Your are on Greeter Form {% endblock %}
+
+{% block content %}
+
+
+    <h1>Madlibs</h1>
+<form action="/hikaye">
+    place: <input type="text"  name="place"> 
+    <br><br>
+    noun: <input type="text"  name="noun"> 
+    <br><br>
+    verb: <input type="text"  name="verb"> 
+    <br><br>
+    adjective: <input type="text"  name="adj"> 
+    <br><br>
+    plural_noun: <input type="text"  name="plural"> 
+    <br><br>
+    <input type= "submit" value="submit">
+</form>
+ 
+ 
+{% endblock %}

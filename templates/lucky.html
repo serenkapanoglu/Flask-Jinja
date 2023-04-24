@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock %}
+{% block page_name %}Your are on Greeter Form {% endblock %}
+
+{% block content %}
+    <h1> Your lucky number is: {{lucky_num}} </h1>
+    <h1> Your eyes are : {{iltifatlar}} </h1>
+    <h1> Your major is : {{majors}} </h1>
+    <p>{{msg}}</p>
+    
+    {% if lucky_num == 9 %}
+    <h2> That's my lucky number</h2>
+    <img src="https://media.giphy.com/media/gPBKtKGk00TfD3D6mY/giphy.gif"
+    alt="">
+
+    {%else%}
+    <h2> I don't like {{lucky_num}} </h2>
+    <img src="https://media.giphy.com/media/fuJjrm6Cv2onpmpPEK/giphy-downsized-large.gif"
+    alt="">
+    {% endif %}
+   
+{% endblock %}
